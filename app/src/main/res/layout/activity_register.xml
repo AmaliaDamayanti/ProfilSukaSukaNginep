@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:layout_width="305dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/gambarReg"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/regUser"
+        android:layout_below="@id/gambarReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Masukkan UserName"
+        android:inputType="text"
+        android:textSize="16sp"
+        />
+    <EditText
+        android:id="@+id/regPassword"
+        android:layout_below="@id/regUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Masukkan Password"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:layout_below="@id/regPassword"
+        android:id="@+id/btnReg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#5eca65"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

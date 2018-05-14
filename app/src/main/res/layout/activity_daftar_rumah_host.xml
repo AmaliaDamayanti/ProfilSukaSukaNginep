@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/gambarUpload"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:text="Add"
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/gambarUpload"
+            android:layout_toRightOf="@id/gambarUpload"
+            android:layout_marginBottom="46dp"
+            android:layout_marginLeft="20dp"
+            android:background="#3e9750"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/ic_add"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@id/rel"
+        android:id="@+id/txt_Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Penginapan"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+         />
+
+    <TextView
+        android:id="@+id/txt_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/edt_nama" />
+
+    <TextView
+        android:id="@+id/txt_fasilitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Fasilitas"
+        android:layout_below="@id/edt_harga"
+         />
+
+    <TextView
+        android:id="@+id/txt_jumlahKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Kamar"
+        android:layout_below="@id/edt_fasilitas"
+        />
+
+    <TextView
+        android:id="@+id/txt_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Alamat"
+        android:layout_below="@id/edt_jumlahKamar"
+        android:layout_alignParentLeft="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_nama"
+        android:layout_below="@+id/txt_Nama"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/edt_harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_harga"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/edt_fasilitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_fasilitas"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/edt_jumlahKamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_jumlahKamar"
+        android:backgroundTint="@color/colorPrimaryDark"
+        />
+
+    <EditText
+        android:id="@+id/edt_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_alamat"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:layout_below="@id/edt_alamat"
+        android:id="@+id/btn_simpanRumah"
+        android:text="SIMPAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="#5a94ab"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    </RelativeLayout>
+</ScrollView>
